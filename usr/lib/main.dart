@@ -2,8 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:couldai_user_app/screens/login_screen.dart';
 import 'package:couldai_user_app/screens/dashboard_screen.dart';
 import 'package:couldai_user_app/utils/app_styles.dart';
+// import 'package:couldai_user_app/services/supabase_service.dart'; // Uncomment when ready
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // TODO: Initialize Supabase here when you have your credentials
+  // await SupabaseService.initialize(
+  //   url: 'YOUR_SUPABASE_URL',
+  //   anonKey: 'YOUR_SUPABASE_ANON_KEY',
+  // );
+
   runApp(const MyApp());
 }
 
